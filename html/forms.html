@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <form action="/submit" method="POST">
+        <h2>Registration Form</h2>
+
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="fullname" placeholder="Enter your name" required>
+
+        <label for="email">Email id: </label>
+        <input type="email" id="email" name="emailId" placeholder="Enter your email">
+
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" minlength="8" required>
+
+        <label for="age">Age</label>
+        <input type="number" id="age" name="age" min="10" max="100" required><br><br>
+
+        <label for="gender">Gender</label><br>
+        <input type="radio" name="gender" value="male">Male
+        <input type="radio" name="gender" value="female">Female<br><br>
+
+        <label for="skills">Skills:</label>
+        <input type="checkbox" name="skills" value="HTML">HTML
+        <input type="checkbox" name="skills" value="CSS">CSS
+        <input type="checkbox" name="skills" value="JavaScript">JavaScript<br><br>
+
+        <label for="city">City:</label>
+        <select name="city" id="city">
+           <option value="Kolkata">Kolkata</option>
+           <option value="Howrah">Howrah</option>
+           <option value="Hooghly">Hooghly</option>
+        </select><br><br>
+
+        <label for="bio">About you: </label>
+        <textarea name="bio" id="bio" rows="5" cols="60" placeholder="Write Something"></textarea>
+
+        <label for="file">Upload Photo:</label>
+        <input type="file" id="file" name="photo"><br><br>
+
+        <button type="submit">Submit</button>
+        <button type="Reset">Reset</button>
+
+    </form>
+</body>
+</html>

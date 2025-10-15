@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+</head>
+<body>
+    <table>
+        <caption>Student Information Table</caption>
+
+        <!--color styling for specific columns-->
+        <colgroup>
+        <col span="1" style="background-color: rgba(220, 220, 220, 0.893);">
+        <col span ="1" style="background-color: rgba(130, 193, 244, 0.955);">
+        <col span="1" style="background-color:#e0f7fa;">
+        <col span="1" style="background-color:#f8bbd0;">
+        </colgroup>
+
+        <!--Table Header Section-->
+
+        <thead>
+            <tr>
+                
+                <th colspan="4" style="background-color: bisque;">Details</th>
+                
+            </tr>
+
+            <tr>
+                <th>Name</th>
+    
+                <th>City</th>
+                <th>Age</th>
+                <th>Course</th>
+            </tr>
+        </thead>
+
+        <!--Table Body section-->
+        <tbody>
+            <tr>
+            <td> Supriya</td>
+            <td>22</td>
+            <td>Btech(IT)</td>
+            <td>Kolkata</td>
+            </tr>
+
+            <tr>
+            <td>Amit</td>
+            <td>23</td>
+            <td>Computer Science</td>
+            <td>Hyderbad</td>
+           </tr>
+
+            <tr>
+                <td>Riya</td>
+                <td>21</td>
+                <td>Electronics</td>
+                <td>Bangalore</td>
+            </tr>
+        </tbody>
+        
+        <!--Table Footer Section-->
+        <tfoot>
+            <tr>
+                <table colspan="3">Total Students</td>
+
+                <td>3</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
