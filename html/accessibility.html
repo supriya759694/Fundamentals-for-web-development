@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accessible Portfolio - Supriya Bhowmick</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+    }
+    header, main, footer {
+      padding: 20px;
+    }
+    header {
+      background-color: #2b2d42;
+      color: white;
+    }
+    nav ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      gap: 20px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+    }
+    nav a:focus {
+      outline: 2px solid yellow; /* for keyboard users */
+    }
+    section {
+      margin-top: 20px;
+    }
+    footer {
+      background-color: #f5f5f5;
+      text-align: center;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 🧭 Header -->
+  <header>
+    <h1>Supriya’s Portfolio</h1>
+    <nav role="navigation" aria-label="Main Navigation">
+      <ul>
+        <li><a href="#about" tabindex="1">About</a></li>
+        <li><a href="#projects" tabindex="2">Projects</a></li>
+        <li><a href="#contact" tabindex="3">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- 🎯 Main Content -->
+  <main>
+
+    <!-- 📸 Image with alt text -->
+    <section id="about">
+      <h2>About Me</h2>
+      <img src="supriya-profile.jpg" alt="Supriya Bhowmick smiling and working on a laptop" width="200">
+      <p>Hello! I’m <strong>Supriya Bhowmick</strong>, a passionate Web Developer and Software Engineer who loves building creative, accessible websites.</p>
+    </section>
+
+    <!-- 🧱 Projects Section with ARIA roles -->
+    <section id="projects">
+      <h2>My Projects</h2>
+      <article role="article" aria-label="Digital Library Management System">
+        <h3>📘 Digital Library Management System</h3>
+        <p>This system helps manage books, students, and admin users efficiently using PHP and MySQL.</p>
+      </article>
+
+      <article role="article" aria-label="Customizable POD Store">
+        <h3>👕 Customizable POD T-Shirt Store</h3>
+        <p>Built using Lit Web Components, it allows users to preview, upload, and print designs on T-shirts.</p>
+      </article>
+    </section>
+
+    <!-- 🧾 Accessible Form -->
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <form>
+        <label for="name">Full Name:</label><br>
+        <input type="text" id="name" name="name" aria-required="true" required><br><br>
+
+        <label for="email">Email Address:</label><br>
+        <input type="email" id="email" name="email" aria-required="true" required><br><br>
+
+        <label for="message">Your Message:</label><br>
+        <textarea id="message" name="message" rows="4" aria-label="Your Message"></textarea><br><br>
+
+        <button type="submit" aria-label="Submit Contact Form">Send Message</button>
+      </form>
+    </section>
+
+  </main>
+
+  <!-- 📞 Footer -->
+  <footer role="contentinfo">
+    <p>📧 Email: <a href="mailto:supriyabhowmick@gmail.com">supriyabhowmick@gmail.com</a></p>
+    <p>🔗 LinkedIn: <a href="https://linkedin.com/in/supriyabhowmick" target="_blank">Supriya Bhowmick</a></p>
+    <p>© 2025 Supriya Bhowmick. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
