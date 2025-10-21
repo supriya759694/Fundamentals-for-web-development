@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css position</title>
+    <style>
+        body{
+            padding: 30px;
+            background-color: black;
+        }
+.parent{
+    padding: 30px;
+    width :100%;
+    height: 500px;
+    border: 2px solid red;
+    display: flex;
+    gap: 15px;
+    position: relative;
+    
+
+}
+
+.square{
+    width: 100%;
+    height: 250px;
+    background-color: darkslategray;
+    order: 2; /* appears 2nd*/
+
+    /* position: absolute;
+    z-index: 1;/*behind*/
+
+}
+.rounds{
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    border-radius: 99%;
+    order: 1;  /*appears first*/
+
+    /*position: absolute;
+    top: 30px;
+    left: 30px;
+    z-index: 2;/*above square*/
+    
+}
+    </style>
+</head>
+<body>
+    <div class="parent">
+    <div class="square"></div>
+    <div class="rounds"> </div>
+    </div>
+</body>
+</html>
