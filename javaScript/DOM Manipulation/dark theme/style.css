@@ -1,0 +1,31 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+    background-color: white;
+    color: #b04e27db;
+    font-size: medium;
+    font-style: italic;
+    font-family: cursive;
+}
+
+.dark{
+    background-color: black;
+    color: #009651ad;
+    font-size: medium;
+    font-style: italic;
+    font-family: cursive;
+    
+}
+#toggle{
+    border-radius: 28px;
+    padding: 16px 89px;
+    background-color: #ffa700;
+    margin: 39px 21px 22px;
+    border: none;
+    font-size: large;
+    font-weight: 800;
+    cursor: pointer;
+}
